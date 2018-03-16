@@ -45,6 +45,10 @@ class Dog
     DB[:conn].execute(sql, name)
   end
   
+  def self.find_by_id(id)
+      
+  end
+  
   def save
     if self.id 
       self.update
