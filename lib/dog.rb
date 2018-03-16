@@ -56,6 +56,8 @@ class Dog
   end
   
   def self.find_or_create_by
+    
+  end
   
   def save
     if self.id 
@@ -78,5 +80,4 @@ class Dog
     
     DB[:conn].execute(sql, name, breed, id)
   end
-end
 end
