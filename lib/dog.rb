@@ -53,6 +53,8 @@ class Dog
     DB[:conn].execute(sql, id)
   end
   
+  def self.find_or_create_by
+  
   def save
     if self.id 
       self.update
